@@ -1,0 +1,14 @@
+<div class="container mx-auto">
+  <div class="row">
+    <div class="info-card" ng-repeat="country in $ctrl.countries">
+      <div class="front">
+        <img ng-src="{{country.flag}}" alt="{{country.name}}" class="card-image">
+      </div>
+      <div class="back">
+        <h5 class="card-title">{{country.name}}</h5>
+        <a href="#!/countries/{{country.name}}" class="btn btn-primary btn-block">See details</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
